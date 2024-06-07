@@ -11,28 +11,31 @@
       height: 360px;
       width: 100%;
       object-fit: cover;
+      margin-bottom:16px;
     }
   </style>
 </head>
   
 <body>
+  {% include 'nav.html' %}
   <div class="container">
-<h1 class="text-center mt-4 mb-4">Real Property Tax Declaration</h1>
-  <img class="img-fluid" id="RPTD1" src="https://4b10d994-ea89-4342-aaeb-17eef3ebda92-00-3jhl78hd00t1z.pike.replit.dev/static/rptd1.jpg" >
-</body>
+
+  <img class="img-fluid" id="banner" src="https://4b10d994-ea89-4342-aaeb-17eef3ebda92-00-3jhl78hd00t1z.pike.replit.dev/static/rptd1.jpg" >
+    <h1 class="text-center mt-4 mb-4">REAL PROPERTY TAX DECLARATION</h1>
+    </body>
   
   <div>
-    {% for job in task %}
-    {% include 'taskitem.html' %}
-    {% endfor %}
+   
+  
+   
     
   </div>
-  <div class="text-center">
-    <button class="mt-4 btn btn-primary btn-lg">About Us</button>
-    
-    <p class="mt-5">Copyright 2024 | Municipal Assessor's Office</p>
+ 
+   
   </div>
   
 </div>
+   {% include 'footer.html' %}
+  
   
 </html>
